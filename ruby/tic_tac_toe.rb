@@ -19,6 +19,8 @@ class Game
 		end
 	end
 
+	private
+	
 	def display_grid
 		puts "\n"
 		@grid.each do |row|
@@ -29,8 +31,6 @@ class Game
 			print "\n"
 		end
 	end
-
-	private
 	
 	def mark_on_grid(player_symbol, cell)
 		cell_number_to_indices = {
