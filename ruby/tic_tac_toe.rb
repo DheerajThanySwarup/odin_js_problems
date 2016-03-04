@@ -28,7 +28,7 @@ class Game
 			end
 			print "\n"
 		end
-		@grid.each do |x|
+		@grid.each do |x| #checking if grid is full or not.....
 			x.each do |y|
 				if /[0-9]/.match(y)
 					return
@@ -55,7 +55,7 @@ class Game
 		}
 		indices = cell_number_to_indices[cell]
 		place_holder = @grid[indices[0]][indices[1]]
-		if place_holder == "X" || place_holder == "O"
+		if place_holder == "X" || place_holder == "O" #checking if cell is empty or occupied
 			puts "Symbol already exists in '#{cell}'cell"
 			return true 
 		end
@@ -69,8 +69,8 @@ class Game
 		col = indices[1]
 		horizontal_check(row)
 		vertical_check(col)
-		diagonal1_check()
-		diagonal2_check()
+		diagonal1_check
+		diagonal2_check
 	end
 
 	def horizontal_check(row)
@@ -91,7 +91,7 @@ class Game
 		winning_message
 	end
 
-	def diagonal1_check()
+	def diagonal1_check
 		for index in 0..2 do
 			unless @grid[index][index] == @player_symbol
 				return
@@ -100,7 +100,7 @@ class Game
 		winning_message
 	end
 
-	def diagonal2_check()
+	def diagonal2_check
 		col = 2
 		for row in 0..2 do
 			unless @grid[row][col] == @player_symbol
