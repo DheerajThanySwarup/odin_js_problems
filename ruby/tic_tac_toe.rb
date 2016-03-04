@@ -28,15 +28,6 @@ class Game
 			end
 			print "\n"
 		end
-		@grid.each do |x| #checking if grid is full or not.....
-			x.each do |y|
-				if /[0-9]/.match(y)
-					return
-				end
-			end
-		end
-		puts "------------------Match Draw----------------"
-		exit 0
 	end
 
 	private
@@ -71,6 +62,15 @@ class Game
 		vertical_check(col)
 		diagonal1_check
 		diagonal2_check
+		@grid.each do |x| #checking if grid is full or not.....
+			x.each do |y|
+				if /[0-9]/.match(y)
+					return
+				end
+			end
+		end
+		puts "------------------Match Draw----------------"
+		exit 0
 	end
 
 	def horizontal_check(row)
