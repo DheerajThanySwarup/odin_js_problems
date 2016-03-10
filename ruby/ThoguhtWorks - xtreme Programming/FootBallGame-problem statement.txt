@@ -1,0 +1,35 @@
+FootBall Game
+
+In a football game there are two teams and some supporters. Each supporter supports one of the two teams. Also there are some reporters from news channel present at the game. When ever any team hits a goal the supporter of those team cheer for their favorite team while the people supporting the other team are sad. Also the reporter publishes the news feed.
+Write a program to simulate this situation.
+
+Input sequence:
+
+(1)i/p: India Brazil 
+(2)i/p: 2 1 
+(3)i/p: Ravi, India 
+(4)i/p: Rahul, Brazil 
+(5)i/p: Vijay, CNN news 
+(6)i/p: Goal: India 
+(7)o/p: Ravi says: Hurrah! 
+(8)o/p: Rahul says: Alas! 
+(9)o/p: Vijay reports: India has scored a goal at 9:30am. Brought to you by CNNnews. 
+(10)i/p: game over. 
+(11)o/p: Ravi say Yes! India won. 
+(12)o/p: Rahul says Alas! Brazil lost. 
+(13)o/p: Vijay reports: India has won the game against Brazil by 1-0. Brought to you by CNN news. 
+
+Understanding I/O:
+
+Line number 1 gives the names of the two teams in this case it is "India" and "Brazil".
+Line number 2 gives two numbers n m where n = number of supporters & m = number of reporters. Next 2 lines each represent supporter. First part gives the supporters name and second part gives the name of the country she/he supports. Ravi who supports India and Rahul who supports Brazil.
+
+Line number 5 represents a reporter. First part gives the reporter's name and second part gives the name of the news channel she/he belongs to. Vijay who is from CNN.
+
+In the following lines there can be any one of the two input
+1.	Goal: Team name 
+2.	Game over. 
+
+When the input is “Goal: Team name” (line number 6). All supporters express there feeling. All reporters report the goal. Example O/P of line number 7,8,9.
+
+If “Game over” is given as input as in line number 10. All the supporters will again express there feeling on winning or losing of their team as line number 11,12. Reporter reports the result of the game as in line number 13. And then the program terminates.
