@@ -1,2 +1,2 @@
-# odin_js_problems
+# odin_Project_Tutorial_Projects
 http://www.theodinproject.com/
